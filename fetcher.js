@@ -57,6 +57,7 @@ const sendReply = (myResponse, partialReplies) => {
         sensorReadings: correctReplies,
         errors: errorReplies
     }));
+    tools.logToConsole("RS -> " + myResponse.statusCode);
 }
 
 module.exports = {
