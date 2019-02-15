@@ -1,0 +1,20 @@
+{
+  "name": "sensors-merger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Przemek",
+  "license": "ISC",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/preset-es2017": "^7.0.0-beta.53",
+    "babel-core": "^6.26.3"
+  }
+}
