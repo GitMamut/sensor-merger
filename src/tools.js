@@ -1,8 +1,8 @@
-const dateFormat = require("dateformat");
+import dateFormat from "dateformat";
 
-function logToConsole(message) {
+const logToConsole = (message) => {
     let formattedDate = dateFormat(new Date(), "yyyy-mm-dd HH:MM:ss");
     console.log("[" + formattedDate + "] " + message);
 }
 
-module.exports = {logToConsole};
+export {logToConsole};
