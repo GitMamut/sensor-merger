@@ -28,7 +28,8 @@ export class Fetcher {
             const response = await fetch(address);
             return await response.json();
         } catch (e) {
-            return logToConsole(e);
+            logToConsole(e);
+            return {error: e};
         }
     }
 
