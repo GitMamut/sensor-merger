@@ -60,7 +60,10 @@ export class Fetcher {
         });
 
         myResponse.writeHead(200, {
-            "Content-type": "text/json"
+            "Content-type": "text/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "POST, GET",
+            "Access-Control-Max-Age": 2592000, // 30 days
         });
         myResponse.end(JSON.stringify({
             date: new Date().getTime(),
